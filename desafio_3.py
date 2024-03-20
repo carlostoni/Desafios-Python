@@ -5,5 +5,6 @@
 print('Digite uma frase para começar')
 frase = input()
 
-print(f'a frase contem {len(frase.replace(' ',''))} letras ')
-print(f'a frase contem {len(frase)}')
+print(f'a frase contem {len(frase.replace(' ','').replace(".", ""))} letras ')
+print(f'a frase contem {len(frase.split( ))} palavras')
+print(f'a frase contem {len(frase.split("."))-1} frases')
