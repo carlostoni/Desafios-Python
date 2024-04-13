@@ -7,9 +7,14 @@ print("Seja bem vindo deseja reservar um quarto?")
 
 opcao = input("sim ou nao: ")
 if opcao == 'sim':
-    print(f"Estes sao os quartos disponiveis{quartos} qual desses voce deseja reservar: ")
-    remover = quartos.remove(int(input()))
-    print(quartos)
+    print(f"Estes sao os quartos disponiveis {quartos} qual desses voce deseja reservar: ")
+    remover=(int(input()))
+    if remover in quartos:
+        quartos.remove(remover)
+        print(f"Quarto {remover} reservado: ")
+    else:
+        print(f'''Quarto indisponivel 
+              Esse sao os disponiveis {quartos}''')
     
 else:
-    print("naoo")    
+    print("Obrigado pela vsita")    
