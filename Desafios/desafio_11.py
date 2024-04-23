@@ -18,10 +18,12 @@
 # Isso porque eles são uniformemente divisíveis por 100 e 400.”
 # Faça um programa no qual o usuário informe um ano e o sistema responda se o ano é bissexto ou não.
 
-ano = int(input("Informe ono desejado: "))
-bissexto = ano % 4 == 0
+for i in range(10):
+    ano = int(input("Informe ono desejado: "))
+    bissexto = 0
 
-if bissexto == True:
-    print("e bissexto")
-else:
-    print("nao e bissexto", bissexto)
+    if bissexto == ano % 4 == 0 and ano % 100 != 0 or ano % 400 == 0 :
+        print("e bissexto")
+    else:
+        print("nao e bissexto")
+pass
