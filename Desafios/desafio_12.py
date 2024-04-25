@@ -7,3 +7,20 @@
 #Verificar se o mês informado existe (ano vai até 12 meses);
 #Verificar se o dia, mês e ano são valores positivos.
 #Informar ao usuário se a data for válida ou não.
+
+dia = int(input("Digite sua data de nacimento "))
+mes = int(input("Digite o mes do seu aniversario "))
+ano = int(input("Digite o ano do seu aniversario "))
+
+
+
+meses_31 =[1, 3, 5, 7, 8, 10, 12]
+bissexto = 0
+
+if mes in meses_31:
+    print(f"O {mes} tem 31 dias")
+elif bissexto == ano % 4 == 0 and ano % 100 != 0 or ano % 400 == 0 :
+    print("oi")
+        
+else:
+    print("nao e bissexto")
