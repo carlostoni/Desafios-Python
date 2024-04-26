@@ -17,7 +17,7 @@ ano = int(input("Digite o ano do seu aniversario "))
 meses_31 =[1, 3, 5, 7, 8, 10, 12]
 bissexto = 0
 
-if mes in meses_31:
+if mes in meses_31 and mes <= 12:
     print(f"O {mes} tem 31 dias")
 elif bissexto == ano % 4 == 0 and ano % 100 != 0 or ano % 400 == 0 :
     print("oi")
