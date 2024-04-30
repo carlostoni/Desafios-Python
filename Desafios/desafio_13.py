@@ -27,15 +27,17 @@ cedulas5 = [5]
 cedulas2 = [2]
 cedulas1 = [1]
 
+total_cedulas = len(cedulas200)
 soma = sum(cedulas200 + cedulas50 + cedulas5 + cedulas2 + cedulas1)
+
+#print("Total de cédulas na lista:", total_cedulas)
+print(f'''Notas R$200 {len(cedulas200)}
+Notas R$50 {+ len(cedulas50)} 
+Notas R$5 {+ len(cedulas5)} 
+Notas R$2 {+ len(cedulas2)} 
+Notas R$1 {+ len(cedulas1)}''')
 
 print("Soma das cédulas:", soma)
 
-print(f'''Essas notas estao disponiveis 
-      R$ 200: {cedulas200} notas
-      R$ 50: {cedulas50} notas
-      R$ 5: {cedulas5} notas
-      R$ 2: {cedulas2} notas
-      R$ 1: {cedulas1} notas''')
 
 saque= int(input("Digite o valor que voçe deseja sacar: "))
