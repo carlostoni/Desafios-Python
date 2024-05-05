@@ -20,7 +20,7 @@
 # Cédulas de 5 reais: 1
 # Cédulas de 2 reais: 1
 # Cédulas de 1 real: 1
-
+total = [0]
 cedulas200 = [200, 200, 200, 200]
 cedulas100 = [100, 100]
 cedulas50 = [50, 50]
@@ -49,5 +49,12 @@ print("Soma das cédulas:", soma)
 
 saque= int(input("Digite o valor que voçe deseja sacar: "))
 
-if soma > saque:
-    print(soma - saque)
+def cal_total(soma, saque):
+    if soma >= saque:
+        total = soma - saque
+        return total
+    else:
+        return "O valor do saque é maior do que o total disponível"
+
+saldo = cal_total(soma, saque)
+print(f'saldo disponivel R${saldo}')
