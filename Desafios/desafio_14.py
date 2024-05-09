@@ -3,15 +3,20 @@
 #Se você errar 10 vezes você perde o jogo.
 
 import random
-
-
-numero = int(input('insira um numero entre 0 e 10000: '))
-
 random_nu = random.randint(0, 10000)
 
-if random_nu > 5000:
-    print('maior')
-    print(random_nu)
-else:
-    print('menor')
-    print(random_nu)
+for i in range(10):
+    numero = int(input('insira um numero entre 0 e 10000: '))
+
+    if numero < random_nu:
+        print('maior')
+        print(random_nu)
+        
+    elif random_nu == numero:
+        print("Numero correto")
+        break
+    else:
+        print('menor')
+        print(random_nu)
+        
+pass
