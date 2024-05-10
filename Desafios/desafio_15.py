@@ -8,11 +8,13 @@ numero = int(input('Quantas vezes voce deseja lancar o dado: '))
 numeros_in =[]
 for i in range(numero):
     random_1 = random.randint(1, 6)
-
     random_2 = random.randint(1, 6)
     
     numeros_in.append(random_1)
-    numeros_in.append(random_2)
-    print(numeros_in)
-    
+    numeros_in.append(random_2)   
 pass
+print(numeros_in)
+
+print(f'''numero 1: {numeros_in.count(1)} numero 2: {numeros_in.count(2)}
+numero 3: {numeros_in.count(3)} numero 4: {numeros_in.count(4)}
+numero 5: {numeros_in.count(5)} numero 6: {numeros_in.count(6)}''')
