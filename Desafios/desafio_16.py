@@ -21,3 +21,4 @@ if entrada == pedra:
          print("venceu")
         else:
             print("perdeu")
+
